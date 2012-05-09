@@ -2,7 +2,7 @@ name := "spring-paperclip"
 
 organization := "com.gs"
 
-version := "1.0.0"
+version := "1.0.1-SNAPSHOT"
 
 credentials  += Credentials(Path.userHome / ".ivy2" / ".credentials")
 

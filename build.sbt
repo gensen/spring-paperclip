@@ -1,8 +1,8 @@
+import sbtrelease.Release._
+
 name := "spring-paperclip"
 
 organization := "com.gs"
-
-version := "1.0.1-SNAPSHOT"
 
 credentials  += Credentials(Path.userHome / ".ivy2" / ".credentials")
 
@@ -21,3 +21,5 @@ libraryDependencies ++= Seq(
   "junit" % "junit" % "4.9" % "test",
   "com.novocode" % "junit-interface" % "0.7" % "test"
 )
+
+seq(releaseSettings:_*)

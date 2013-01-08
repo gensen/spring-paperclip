@@ -1,4 +1,4 @@
-import sbtrelease.Release._
+import sbtrelease.ReleasePlugin._
 
 name := "spring-paperclip"
 
@@ -12,7 +12,7 @@ publishTo   <<= (version) { version: String =>
   else                                   Some("releases"  at nexus + "releases/")
 }
 
-scalaVersion := "2.9.1"
+scalaVersion := "2.10.0"
 
 libraryDependencies ++= Seq(
   "net.java.dev.inflector" % "inflector" % "0.7.0",
